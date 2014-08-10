@@ -28,7 +28,9 @@
 
 <br>
 
-<%= link_to 'Delete All Users', User, method: :delete, data: { confirm: 'Are you sure?' } %>
-
-
-<%= link_to 'New User', new_user_path %>
+<div id="navbar2">
+  <table>
+    <td><%= link_to 'Delete All Users', User, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'New User', new_user_path %></td>
+  </table>
+</div>

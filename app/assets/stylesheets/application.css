@@ -14,24 +14,56 @@
  *= require_self
  */
 
-td {
-	font-size: 14px;
-	font-family: garamond;
+#navbar a:link, #navbar a:visited, #navbar a:hover, #navbar a:active {
+	text-decoration: none;
+	font-size: 20px;
+	color: blue;
+	background-color: transparent;
 }
 
-tbody{
+#navbar2 a:link, #navbar2 a:visited, #navbar2 a:hover, #navbar2 a:active {
+	text-decoration: none;
+	font-size: 15px;
 	color: red;
-	font-size: 20px ;
+	background-color: transparent;
 }
 
-body {
-	background-color: white;
+#navbar2 {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
 }
 
-.class {
-
+h1 {
+	text-align: center;
+	padding: 10px;
+	font-family: Georgia;
+	font-size: 40px;
 }
 
-#id {
-
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
 }
+
+table {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th {
+	height: 25px;
+	background-color: #4169E1;
+	color: white;
+}
+
+td {
+	text-align: center;
+	padding: 5px;
+	font-family: Courier;
+	font-size: 15px;
+} 
+
+

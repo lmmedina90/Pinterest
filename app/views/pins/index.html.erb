@@ -14,7 +14,7 @@
     <% @pins.each do |pin| %>
       <tr>
         <td><%= pin.name %></td>
-        <td><%= image_tag(pin.image_url, :width => 100)%></td>
+        <td><%= image_tag(pin.image_url, :width => 75)%></td>
         <td><%= pin.board.name rescue "N/A" %></td>
         <td><%= pin.user.full_name rescue "N/A" %></td>
         <td><%= link_to 'Show', pin %></td>
@@ -27,7 +27,9 @@
 
 <br>
 
-<%= link_to 'Delete All Pins', Pin, method: :delete, data: { confirm: 'Are you sure?' } %>
-
-
-<%= link_to 'New Pin', new_pin_path %>
+<div id="navbar2">
+  <table>
+    <td><%= link_to 'Delete All Pins', Pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'New Pin', new_pin_path %></td>
+  </table>
+</div>
