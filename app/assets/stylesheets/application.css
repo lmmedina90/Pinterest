@@ -16,7 +16,7 @@
 
 #navbar a:link, #navbar a:visited, #navbar a:hover, #navbar a:active {
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 25px;
 	color: blue;
 	background-color: transparent;
 }
@@ -24,7 +24,7 @@
 #navbar2 a:link, #navbar2 a:visited, #navbar2 a:hover, #navbar2 a:active {
 	text-decoration: none;
 	font-size: 15px;
-	color: red;
+	color: blue;
 	background-color: transparent;
 }
 
@@ -54,9 +54,10 @@ table {
 }
 
 th {
-	height: 25px;
+	height: 40px;
 	background-color: #4169E1;
 	color: white;
+	font-size: 20px;
 }
 
 td {
@@ -66,4 +67,10 @@ td {
 	font-size: 15px;
 } 
 
+p {
+	text-align: center;
+	padding: 5px;
+	font-family: Courier;
+	font-size: 20px;
+}
 
