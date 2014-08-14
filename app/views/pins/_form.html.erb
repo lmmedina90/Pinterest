@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :Select_Board %><br>
-    <%= f.collection_select(:board_id, Board.all, :id, :name) %><br>
+    <%= f.collection_select(:board_id, Board.all, :id, :name, {class: "select_board"}) %><br>
   </div>
   <div class="field">
     <%= f.label :Select_User %><br> 

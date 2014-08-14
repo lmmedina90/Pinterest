@@ -20,5 +20,9 @@
   <%= @pin.user.full_name rescue "N/A" %>
 </p>
 
-<%= link_to 'Edit', edit_pin_path(@pin) %> |
-<%= link_to 'Back', pins_path %>
+<div id="navbar2">
+	<table>
+		<td><%= link_to 'Edit', edit_pin_path(@pin) %></td>
+		<td><%= link_to 'Back', pins_path %></td>
+	</table>
+</div>

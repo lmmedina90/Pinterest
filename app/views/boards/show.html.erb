@@ -15,5 +15,9 @@
   <%= @board.user.full_name rescue "N/A" %>
 </p>
 
-<%= link_to 'Edit', edit_board_path(@board) %> |
-<%= link_to 'Back', boards_path %>
+<div id="navbar2">
+	<table>
+		<td><%= link_to 'Edit', edit_board_path(@board) %></td>
+		<td><%= link_to 'Back', boards_path %></td>
+	</table>
+</div>

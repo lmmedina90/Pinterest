@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Javascript Playground</title>
+    <script src="http://code.jquery.com/jquery-2.0.1.min.js"></script>
+    <style>
+      body { width: 960px; margin: 20px auto;}
+    </style>
+  </head>
+
+  <script>
+    var h1 = document.getElementsByTagName("h1")[0];
+    h1.onclick = function() {
+      var e = document.getElementsByTagName("ul")[0];
+      e.style.display = "none";
+    }
+  </script>
+
+  <body>
+
+    <h1>jQuery Challenges</h1>
+
+    <ul>
+      <li>Clicking the heading above should make this entire list appear and disappear.</li>
+      <li>Clicking any of these list items should turn that list item red.</li>
+      <li id="add_item">Clicking this item in particular should add a new item to the list.</li>
+    </ul>
+
+    <a href="http://www.apple.com">Clicking this paragraph should display an alert and prevent the browser from navigating away from this page.</a>
+
+  </body>
+</html>

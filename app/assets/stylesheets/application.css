@@ -14,6 +14,9 @@
  *= require_self
  */
 
+
+/* _form.html.erb files */
+
 #navbar a:link, #navbar a:visited, #navbar a:hover, #navbar a:active {
 	text-decoration: none;
 	font-size: 25px;
@@ -33,6 +36,78 @@
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px;
+}
+
+.field {
+	text-align: center;
+	font-family: courier;
+	font-size: 20px;
+	padding: 15px;
+}
+
+.field input {
+	font-family: courier;
+	font-size: 15px;
+	text-align: center;
+	width: 250px;
+}
+
+.actions {
+	text-align: center;
+}
+
+.item-background {
+	background: #fefefe; 
+	border: 2px solid #fcfcfc; 
+	box-shadow: 0 1px 2px #888888; 
+	margin: 0 2px 15px; 
+	transition: opacity: .4s ease-in-out; 
+	column-break-inside: avoid; 
+	display: inline-block; 
+	width: 100%; 
+	border-radius: 5px;
+}
+
+.item-background:not(:hover) { 
+	opacity: 0.7;
+}
+
+.pin-image {
+	width: 100%; 
+	height: auto;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.item-info {
+	padding: 15px; 
+	padding-bottom: 10px; 
+	padding-top: 0px;
+	text-align: center;
+	font-size: 15px;
+	font-family: courier;
+}
+
+.item-links {
+	text-align: center;
+	font-size: 15px;
+	font-family: courier;
+}
+
+#columns {
+	column-width: 320px;
+	column-gap: 15px;
+	column-count: 4;
+	column-fill: auto;
+	-webkit-column-gap: 15px;
+	-webkit-column-count: 4;
+	-webkit-column-fill: auto;
+	-webkit-column-width: 320px;
+	width: 90%;
+	max-width: 1100px;
+	margin: 50px auto;
 }
 
 h1 {
