@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  devise_for :users
+  
   delete '/pins' => 'pins#delete_all'
 
   delete '/users' => 'users#delete_all'

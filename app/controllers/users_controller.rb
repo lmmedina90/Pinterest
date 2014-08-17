@@ -13,7 +13,9 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+
+    @users = User.order("first_name").page(params[:page])
+
 
     if @users.count > 5
       @some_text = "We have #{@users.count} users."

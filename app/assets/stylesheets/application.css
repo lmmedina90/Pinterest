@@ -52,6 +52,21 @@
 	width: 250px;
 }
 
+.field_new {
+	text-align: center;
+	font-family: courier;
+	font-size: 25px;
+	padding: 15px;
+}
+
+.field_new input {
+	font-family: courier;
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+	width: 250px;
+}
+
 .actions {
 	text-align: center;
 }
@@ -114,24 +129,38 @@ h1 {
 	text-align: center;
 	padding: 10px;
 	font-family: Georgia;
-	font-size: 40px;
+	font-size: 60px;
 }
 
-table, th, td {
-	border: 1px solid black;
-	border-collapse: collapse;
+.navbar-text .pull-right {
+	text-align: center;
 }
 
-table {
+.nav {
+	font-size: 15px;
+}
+
+.table {
 	width: 75%;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: #669999;
+	opacity: 0.7;
+}
+
+.jumbotron {
+	opacity: 0.7;
+	color: black;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50px;
+	padding: 10px;
+	background-color: transparent;
 }
 
 th {
-	height: 40px;
-	background-color: #4169E1;
-	color: white;
+	text-align: center;
 	font-size: 20px;
 }
 
@@ -139,13 +168,33 @@ td {
 	text-align: center;
 	padding: 5px;
 	font-family: Courier;
-	font-size: 15px;
+	font-size: 20px;
+	color: black;
 } 
+
+.sign_up {
+	font-size: 25px;
+}
 
 p {
 	text-align: center;
 	padding: 5px;
 	font-family: Courier;
 	font-size: 20px;
+}
+
+.well {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+body {
+	background-image: url("nature.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	padding: 120px;
 }
 

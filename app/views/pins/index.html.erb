@@ -1,10 +1,12 @@
-<h1>Listing All Pins</h1>
+<div class="jumbotron">
+  <h1>Listing All Pins</h1>
+</div>
 
 <div id="columns">
   <% @pins.each do |pin| %>
     <div class="item-background">
         <div class="pin-image">
-          <%= image_tag(pin.image_url, :width => 100)%>
+          <%= image_tag(pin.image_url, :width => "100%")%>
         </div>
         <div class="item-info">
           <h3><%= pin.name %></h3>

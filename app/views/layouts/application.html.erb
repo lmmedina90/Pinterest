@@ -8,18 +8,61 @@
   </head>
 
   <body>
+      <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+              <div class="navbar-brand">
+                <%= link_to "Pinterest", home_path %>
+              </div>
+          </div>
 
-    <div id="navbar">
-      <table>
-        <td><%= link_to "Users", users_path %></td>
-        <td><%= link_to "Pins", pins_path %></td>
-        <td><%= link_to "Boards", boards_path %></td>
-        <td><%= link_to "About", about_path %></td>
-        <td><%= link_to "Home", home_path %></td>
-      </table>
-    </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li>
+                <%= link_to "Users", users_path %>
+              </li>
+              <li>
+                <td><%= link_to "Pins", pins_path %></td>
+              </li>
+              <li class="dropdown">
+                <td><%= link_to "Boards", boards_path %></td>
+              </li>
+              <li>
+                <td><%= link_to "About", about_path %></td>
+              </li>
+              <li>
+                <td><%= link_to "Home", home_path %></td>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </nav>
+
+  <% if notice %>
+   <p class="alert alert-success"><%= notice %></p>
+  <% end %>
+  
+  <% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+  <% end %>
 
   <%= yield %>
 
   </body>
+</div>
 </html>
