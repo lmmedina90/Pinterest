@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'devise'
+gem 'devise', '3.1'
 
 gem 'kaminari'
 

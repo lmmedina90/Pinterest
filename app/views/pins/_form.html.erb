@@ -11,19 +11,19 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field_new">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
-  <div class="field">
+  <div class="field_new">
     <%= f.label :image %><br>
     <%= f.file_field :image %>
   </div>
-  <div class="field">
+  <div class="field_new">
     <%= f.label :Select_Board %><br>
     <%= f.collection_select(:board_id, Board.all, :id, :name, {class: "select_board"}) %><br>
   </div>
-  <div class="field">
+  <div class="field_new">
     <%= f.label :Select_User %><br> 
     <%= f.collection_select(:user_id, User.all, :id, :full_name) %><br>
   </div>

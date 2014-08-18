@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   	devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+
 	max_paginates_per 100
 
 	has_many :boards
@@ -13,4 +14,5 @@ class User < ActiveRecord::Base
 	def full_name
 		"#{first_name} #{last_name}"
 	end
+
 end

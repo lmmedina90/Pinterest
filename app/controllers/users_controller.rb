@@ -50,7 +50,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
-    respond_to do |format|
+  respond_to do |format|
       if @user.save
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
@@ -66,7 +66,7 @@ class UsersController < ApplicationController
   def update
     respond_to do |format|
       if @user.update(user_params)
-        format.html { redirect_to @user, notice: 'User was successfully updated.' }
+        format.html { redirect_to "/boards/new", notice: "Welcome to Pinterest, #{@user.first_name}!" }
         format.json { render :show, status: :ok, location: @user }
       else
         format.html { render :edit }

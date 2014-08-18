@@ -30,6 +30,9 @@ class BoardsController < ApplicationController
   def edit
   end
 
+  def edit_first
+  end
+
   # POST /boards
   # POST /boards.json
   def create
@@ -37,7 +40,7 @@ class BoardsController < ApplicationController
 
     respond_to do |format|
       if @board.save
-        format.html { redirect_to @board, notice: 'Board was successfully created.' }
+        format.html { redirect_to '/pins/new', notice: 'Board was successfully created.' }
         format.json { render :show, status: :created, location: @board }
       else
         format.html { render :new }
